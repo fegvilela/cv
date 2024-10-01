@@ -1,0 +1,171 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Developer CV
+% LaTeX Template
+% Version 1.0 (28/1/19)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Jan Vorisek (jan@vorisek.me)
+% Based on a template by Jan Küster (info@jankuester.com)
+% Modified for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.45\textwidth} % 45% of the page width for name
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% If your name is very short, use just one of the lines below
+	% If your name is very long, reduce the font size or make the minipage wider and reduce the others proportionately
+	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Fernanda}}}}} % First name
+	
+	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Vilela}}}}} % Last name
+	
+	\vspace{6pt}
+	
+	{\huge Sr Data Engineer} % Career or current job title
+\end{minipage}
+\begin{minipage}[t]{0.275\textwidth} % 27.5% of the page width for the first row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+	\icon{MapMarker}{12}{Brasília, Brazil}\\
+	\icon{Phone}{12}{+55 61 99903 8949}\\
+	\icon{At}{12}{\href{mailto:fegvilela@gmail.com}{fegvilela@gmail.com}}\\	
+\end{minipage}
+\begin{minipage}[t]{0.275\textwidth} % 27.5% of the page width for the second row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+	\icon{Linkedin}{11}{\href{https://www.linkedin.com/in/fegvilela/}{linkedin.com/in/fegvilela}}\\
+	\icon{Github}{12}{\href{https://github.com/fegvilela}{github.com/fegvilela}}\\
+\end{minipage}
+
+\vspace{0.5cm}
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION, SKILLS AND TECHNOLOGIES
+%----------------------------------------------------------------------------------------
+
+\cvsect{Who Am I?}
+
+
+My main programming languages and skills:\\
+1.\textbf{Python}(6 years)   2.\textbf{SQL}(3 years) 3. \textbf{ETL}(4 years) 4.\textbf{AWS}(4 years) 5.\textbf{Docker}(4 years) 6.\textbf{Databricks/Spark}(3 years) \\7.\textbf{NodeJS/ReactJS/Typescript}(2 years)\\
+
+As a curious and detail-oriented person, I value understanding things in deep. Team work is an important trait for me and I'm always seeking for environments where there's plenty of collaboration, innovation and freedom to create and to fail.\\
+
+Furthermore, in any project I work on, I focus on some key aspects. The first one is the quality of the software/data I'm delivering, they need to be top-notch. I also aim for a solid and well designed architecture, because that keep things easy to maintain and to scale. Good documentation and usability are important too, I work hard to deliver something that's smooth for users and for future developers. And, finally, observability, because it helps on spotting problems and troubleshooting.
+
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\cvsect{Experience}
+
+\begin{entrylist}
+	\entry
+		{4/2023 -- 9/2024 \\\footnotesize{1 yr and 6 mos}}
+		{Sr Software Eng. | Data Ingestion Platform}
+		{Nubank}
+		{
+On Data Ingestion team we are responsible for:
+\\ - Maintain more than 10 services in order to ingest data from a myriad of sources into Nubank's Data Lake
+\\- Develop new data incremental ingestion platform following the Data Mesh concept of decentralisation and ownership, ingesting more than 25 bi events per day
+\\\texttt{Scala}\slashsep\texttt{Spark}\slashsep\texttt{DeltaLake}\slashsep\texttt{Clojure}\slashsep\texttt{AWS}\slashsep\texttt{Kafka}\slashsep\texttt{Kubernetes}\slashsep\texttt{Databricks}\slashsep\texttt{BigQuery}}
+	\entry
+		{3/2022 -- 3/2023 \\\footnotesize{1 yr 1 mo}}
+		{Data Engineer | Data Platform}
+		{Loft}
+		{- Develop and maintain the Data Platform and tooling for the Data Scientists and Data Analysts in the company
+\\- Use Stitch ETL tooling for Data Ingestion integrating with over 100 Data Sources of 10+ kinds (PostgreSQL, MySQL, Salesforce, Pipefy, MongoDB)
+\\- Use Databricks, AWS Firehose and Python/Spark Applications/Packages to ensure Data Governance, Anonymization, and ease Data Promotion to the Analytical Layers in our Data Lake
+\\- Tune Spark and Cluster configs to enhance performance and cost/scalability of ETL jobs
+\\- Mentor other engineers, mainly on diversity groups, on career and technical issues \\ \texttt{Python}\slashsep\texttt{FastAPI}\slashsep\texttt{Spark}\slashsep\texttt{Databricks}\slashsep\texttt{DeltaLake}\slashsep\texttt{AWS}\slashsep\texttt{SQL}\slashsep\texttt{Docker}\slashsep\texttt{StitchETL}}
+	\entry
+		{8/2021 -- 2/2022 \\\footnotesize{1 yr and 2 mos}}
+		{Data Analytics Engineer}
+		{Pagar.me}
+		{- Maintained and developed the ETL flows inside Pagar.me's Data Warehouse called Tesseract (merging business rules, engineering, and data quality)\\
+  - Implemented data quality monitoring to data transformation flows\\
+  - Created automations inside the team, speeding up and ensuring quality of the main processes \\
+  - Improved the technical level of the existing systems, solved technical debt, solved architectural problems and improved system design
+\\\texttt{Tableau}\slashsep\texttt{SQL}\slashsep\texttt{Airflow}\slashsep\texttt{AWS}\slashsep\texttt{Docker}\slashsep\texttt{Python}\slashsep\texttt{Data Modeling}\slashsep\texttt{DataDog}\slashsep\texttt{NodeJs}}
+	\entry
+		{9/2020 -- 12/2021\\\footnotesize{1 yr and 4 mos\\part time}}
+		{MLOps Software Engineer}
+		{NextCam}
+		{- Design and build the MLOps application for Nextcam's main product, improving the performance of training of new models and tunning of old ones\\
+- Design, create, and deploy the CI/CD for all Nextcam's applications\\
+- Improve quality/architecture practices in the Engineering team\\
+- Develop product strategy
+\\\texttt{FastAPI}\slashsep\texttt{Python}\slashsep\texttt{Postgres}\slashsep\texttt{AWS}\slashsep\texttt{Docker}\slashsep\texttt{NodeJS}\slashsep\texttt{Typescript}\slashsep\texttt{ReactJS}\slashsep\texttt{Heroku}}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\cvsect{Education}
+
+\begin{entrylist}
+	\entry
+		{2011 -- 2017}
+		{Electrical Engineering, BSc.}
+		{Universidade de Brasilia}
+		{Graduation Thesis: Typography Pattern Recognition System (python, openCV, scikit-learn, dataset composition and image processing)\\
+Prof. Dra. Mylène C.Q. Farias}
+	\entry
+		{2014 -- 2015}
+		{Electrical and Electronic Engineering, Interuniversity Exchange Bachelor}
+		{Brunel University London}
+		{Graduation Thesis: Queue Simulation for H264 Video Codec (Matlab).\\
+Prof. Dr. John Cosmas.}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	ADDITIONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.5\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+
+	\cvsect{Languages}
+	
+	\textbf{Portuguese(Brazil)} - native\\
+	\textbf{English} - proficient\\
+	\textbf{Italian} - intermediate
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.5\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	\cvsect{Non profit}
+	
+	I gave mentorship to 10+ professionals who wanted to switch their career to software, and the program is still open. 
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
